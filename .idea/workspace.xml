@@ -1,18 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b551e6c-892a-4a85-8062-8c900f88e5ee" name="Changes" comment="" />
+    <list default="true" id="6b551e6c-892a-4a85-8062-8c900f88e5ee" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/LAB6_1/Bicycle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LAB6_1/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LAB6_1/Motorcycle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LAB6_1/Vehicle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LAB6_1/VehicleMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "lkulig-wsb"
+  }
 }]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="49ab5ad6-5e6f-44ca-9121-12257cf9d40a" />
+        <option name="url" value="https://github.com/lkulig-wsb/LAB6" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2ZJO2U8xjMWquojnvW0QQPxDRZO" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -25,6 +56,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
+    "node.js.selected.package.tslint": "(autodetect)",
     "onboarding.tips.debug.path": "C:/Users/l.kulig/Documents/WSB/Semestr III/Programowanie w JAVA/InteliJ/LAB6/src/Main.java",
     "vue.rearranger.settings.migration": "true"
   }
