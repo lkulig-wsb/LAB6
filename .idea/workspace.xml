@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b551e6c-892a-4a85-8062-8c900f88e5ee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/LAB6_1/Bicycle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LAB6_1/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LAB6_1/Motorcycle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LAB6_1/Vehicle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LAB6_1/VehicleMain.java" afterDir="false" />
+    <list default="true" id="6b551e6c-892a-4a85-8062-8c900f88e5ee" name="Changes" comment="LAB6_1 First Commit.">
+      <change afterPath="$PROJECT_DIR$/src/Abstrakcja.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Anonimowy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LAB6_1/PrzykladInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LAB6_1/PrzykladPrzeciazenia.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LAB6_2/Przeciazenie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LAB6_2/PrzeciazenieKlasa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LAB6_2/PrzesloniecieMaszyna.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Przyklad.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,12 +30,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "lkulig-wsb"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;lkulig-wsb&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -50,17 +53,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "onboarding.tips.debug.path": "C:/Users/l.kulig/Documents/WSB/Semestr III/Programowanie w JAVA/InteliJ/LAB6/src/Main.java",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/l.kulig/Documents/WSB/Semestr III/Programowanie w JAVA/InteliJ/LAB6/src/Main.java&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -70,8 +75,26 @@
       <option name="presentableId" value="Default" />
       <updated>1702136510334</updated>
       <workItem from="1702136511311" duration="2000" />
+      <workItem from="1702186501978" duration="1648000" />
+      <workItem from="1702225523686" duration="8442000" />
     </task>
+    <task id="LOCAL-00001" summary="LAB6_1 First Commit.">
+      <option name="closed" value="true" />
+      <created>1702141543310</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1702141543310</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="LAB6_1 First Commit." />
+    <option name="LAST_COMMIT_MESSAGE" value="LAB6_1 First Commit." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
