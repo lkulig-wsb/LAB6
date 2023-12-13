@@ -1,7 +1,7 @@
 package LAB6_4;
 
+import java.util.*;
 
-import java.util.Objects;
 //Klasa implementuje interface Comparalbe do porównywania obiektów.
 class Ksiazka implements Comparable<Ksiazka>{
     //Dane składowe klasy Książka.
@@ -56,6 +56,27 @@ class Ksiazka implements Comparable<Ksiazka>{
                 Objects.equals(gatunek,other.gatunek);
     }
 
+    class ComparatorRokWydania implements Comparator<Ksiazka>{
+        @Override
+        public int compare(Ksiazka k1, Ksiazka k2){
+            return Integer.compare(k1.getRokWydania(),k2.getRokWydania());
+        }
+    }
+
+    class ComparatorGatunek implements Comparator<Ksiazka>{
+        @Override
+        public int compare(Ksiazka k1, Ksiazka k2){
+            return k1.getGatunek().compareTo(k2.getGatunek());
+        }
+    }
+
+    class ComparatorAutor implements  Comparator<Ksiazka>{
+        @Override
+        public int compare(Ksiazka k1, Ksiazka k2){
+            return k1.getAutor().compareTo(k2.getAutor());
+        }
+    }
+
 
     public static void main(String[] args){
 
@@ -108,6 +129,31 @@ class Ksiazka implements Comparable<Ksiazka>{
             System.out.println(k1.getTytul() + " została wydana póżniej niż " + k4.getTytul());
         }else {
             System.out.println(k1.getTytul() + " i " + k4.getTytul() + " zostały wydane w tym samym roku, czyli " + k4.getRokWydania() );
+        }
+        System.out.println();
+        //Comparator
+        //Użycie ComparatorGatunek do porównania obiektów i posortowania po gatunku.
+        System.out.println("Comparator do sortowania obiektów.");
+        System.out.println("----------------------------------");
+        //Utworznie ArrayList<>
+        List<Ksiazka> ksiazki = new ArrayList<>();
+        //Dodanie obiektów do Listy.
+        ksiazki.add(k1);
+        ksiazki.add(k4);
+        ksiazki.add(k5);
+        ksiazki.add(k6);
+        //Wyświetlenie listy przed sortowaniem.
+        System.out.println("Przed sortowaniem:");
+        for(Ksiazka ksiazka : ksiazki){
+            System.out.println(ksiazka);
+        }
+        //Użycie Comparatora do porównania i posortowania obiektów pod kątem gatunku.
+        Comparator<Ksiazka> gatunekComparator = Comparator.comparing(Ksiazka::getGatunek);
+        Collections.sort(ksiazki, gatunekComparator);
+        //Wyświetlenie listy posortowanej po gatunku
+        System.out.println("Po sortowaniu:");
+        for(Ksiazka ksiazka : ksiazki){
+            System.out.println(ksiazka);
         }
 
 
