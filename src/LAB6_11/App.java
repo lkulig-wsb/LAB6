@@ -30,7 +30,9 @@ class Student extends Osoba{
     //Przesłonięcie metody toString() z uwzględnieniem pola rokStudiow.
     @Override
     public String toString(){
-        return  super.toString() + ", Rok studiów: " + rokStudiow;
+        return  "Student: \n" +
+                "----------\n" +
+                super.toString() + ", Rok studiów: " + rokStudiow;
     }
 
 }
@@ -44,6 +46,7 @@ public class App {
         //poszczególnych obiektów za pomocą przesłoniętej metody toString().
 
         System.out.println(osoba.toString());
+        System.out.println();
         System.out.println(student.toString());
     }
 }
