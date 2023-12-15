@@ -28,7 +28,7 @@ class Student extends Osoba{
         this.rokStudiow = rokStudiow;
     }
     //Przesłonięcie metody toString() z uwzględnieniem pola rokStudiow.
-    @Override
+    //@Override
     public String toString(){
         return  "Student: \n" +
                 "----------\n" +
