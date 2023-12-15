@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b551e6c-892a-4a85-8062-8c900f88e5ee" name="Changes" comment="LAB6_11 Final Commit.">
+    <list default="true" id="6b551e6c-892a-4a85-8062-8c900f88e5ee" name="Changes" comment="LAB6_12 Commit 2.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LAB6_12/KalkulatorMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LAB6_12/KalkulatorMain.java" afterDir="false" />
     </list>
@@ -80,7 +80,7 @@
       <workItem from="1702538208078" duration="16815000" />
       <workItem from="1702566671486" duration="222000" />
       <workItem from="1702574209361" duration="5007000" />
-      <workItem from="1702626591470" duration="12981000" />
+      <workItem from="1702626591470" duration="14064000" />
     </task>
     <task id="LOCAL-00001" summary="LAB6_1 First Commit.">
       <option name="closed" value="true" />
@@ -226,7 +226,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702644838852</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="LAB6_12 Commit 2.">
+      <option name="closed" value="true" />
+      <created>1702649675584</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1702649675584</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,7 +260,8 @@
     <MESSAGE value="LAB6_8 Final Commit." />
     <MESSAGE value="LAB6_12 Initial Commit." />
     <MESSAGE value="LAB6_11 Final Commit." />
-    <option name="LAST_COMMIT_MESSAGE" value="LAB6_11 Final Commit." />
+    <MESSAGE value="LAB6_12 Commit 2." />
+    <option name="LAST_COMMIT_MESSAGE" value="LAB6_12 Commit 2." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
