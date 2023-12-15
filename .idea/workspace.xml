@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b551e6c-892a-4a85-8062-8c900f88e5ee" name="Changes" comment="LAB6_11 Commit 1.">
+    <list default="true" id="6b551e6c-892a-4a85-8062-8c900f88e5ee" name="Changes" comment="LAB6_11 Commit 3.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LAB6_11/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LAB6_11/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +78,8 @@
       <workItem from="1702457910012" duration="11075000" />
       <workItem from="1702538208078" duration="16815000" />
       <workItem from="1702566671486" duration="222000" />
-      <workItem from="1702574209361" duration="3938000" />
+      <workItem from="1702574209361" duration="5007000" />
+      <workItem from="1702626591470" duration="596000" />
     </task>
     <task id="LOCAL-00001" summary="LAB6_1 First Commit.">
       <option name="closed" value="true" />
@@ -169,7 +169,23 @@
       <option name="project" value="LOCAL" />
       <updated>1702577484208</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="LAB6_11 Commit 2.">
+      <option name="closed" value="true" />
+      <created>1702578513339</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1702578513339</updated>
+    </task>
+    <task id="LOCAL-00013" summary="LAB6_11 Commit 3.">
+      <option name="closed" value="true" />
+      <created>1702578963492</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1702578963492</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,7 +203,9 @@
     <MESSAGE value="LAB6_9 Commit 2." />
     <MESSAGE value="LAB6_10 Commit 1." />
     <MESSAGE value="LAB6_11 Commit 1." />
-    <option name="LAST_COMMIT_MESSAGE" value="LAB6_11 Commit 1." />
+    <MESSAGE value="LAB6_11 Commit 2." />
+    <MESSAGE value="LAB6_11 Commit 3." />
+    <option name="LAST_COMMIT_MESSAGE" value="LAB6_11 Commit 3." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
