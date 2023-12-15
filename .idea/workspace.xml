@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b551e6c-892a-4a85-8062-8c900f88e5ee" name="Changes" comment="LAB6_8 Final Commit.">
-      <change afterPath="$PROJECT_DIR$/src/LAB6_12/KalkulatorMain.java" afterDir="false" />
+    <list default="true" id="6b551e6c-892a-4a85-8062-8c900f88e5ee" name="Changes" comment="LAB6_11 Final Commit.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LAB6_11/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LAB6_11/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LAB6_12/KalkulatorMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LAB6_12/KalkulatorMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +80,7 @@
       <workItem from="1702538208078" duration="16815000" />
       <workItem from="1702566671486" duration="222000" />
       <workItem from="1702574209361" duration="5007000" />
-      <workItem from="1702626591470" duration="9397000" />
+      <workItem from="1702626591470" duration="12981000" />
     </task>
     <task id="LOCAL-00001" summary="LAB6_1 First Commit.">
       <option name="closed" value="true" />
@@ -211,7 +210,23 @@
       <option name="project" value="LOCAL" />
       <updated>1702642798367</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="LAB6_12 Initial Commit.">
+      <option name="closed" value="true" />
+      <created>1702644811969</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1702644811969</updated>
+    </task>
+    <task id="LOCAL-00018" summary="LAB6_11 Final Commit.">
+      <option name="closed" value="true" />
+      <created>1702644838852</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1702644838852</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,7 +250,9 @@
     <MESSAGE value="LAB6_8 Commit1." />
     <MESSAGE value="LAB6_8 Commit2." />
     <MESSAGE value="LAB6_8 Final Commit." />
-    <option name="LAST_COMMIT_MESSAGE" value="LAB6_8 Final Commit." />
+    <MESSAGE value="LAB6_12 Initial Commit." />
+    <MESSAGE value="LAB6_11 Final Commit." />
+    <option name="LAST_COMMIT_MESSAGE" value="LAB6_11 Final Commit." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
