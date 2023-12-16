@@ -1,7 +1,8 @@
 package LAB6_7;
 
 //Przykład wykorzystania interfejsu Cloneable w klasie.
- class Game implements Cloneable{
+//Dołożenie interfaceu Comparable.
+ class Game implements Cloneable, Comparable<Game>{
     //Dane składowe klasy Game.
     private String name;
     private String ganre;
@@ -45,12 +46,20 @@ package LAB6_7;
     public Object clone() throws CloneNotSupportedException {
         return super.clone(); //wywołanie metody clone() z klasy nadrzędnej Object
     }
+
+    @Override
+    public int compareTo(Game otherGame){
+        //Porównanie dwóch gier na podstawie ilości graczy.
+        return Integer.compare(this.numOfPlayers, otherGame.numOfPlayers);
+    }
 }
 public class MainGame {
     public static void main(String[] args){
         //Utworzenie obiektu klasy Game.
         Game ogGame = new Game("Gran Turismo 6","Racing Game", 10);
 
+        System.out.println("Test metody clone():");
+        System.out.println("--------------------");
         try{
             //Klonowanie objektu Game.
             Game cloneGame = (Game) ogGame.clone();
@@ -84,6 +93,24 @@ public class MainGame {
 
         }catch (CloneNotSupportedException e){
             e.printStackTrace();
+        }
+        System.out.println("\nTest metody compareTo():");
+        System.out.println("------------------------");
+
+        //Utworzenie obiektów klasy Game.
+        Game warcaby = new Game("Warcaby", "Gra planszowa",2);
+        Game tysiac = new Game("Tysiąc", "Karciana",4);
+
+        //Porównujemy gry pod kątem graczy.
+        if(warcaby.compareTo(tysiac)<0){
+            System.out.println("W " + warcaby.getName() + " gra mniejsza liczba graczy niż w "+
+                    tysiac.getName());
+        }else if (warcaby.compareTo(tysiac)>0){
+            System.out.println("W " + warcaby.getName() + " gra większa liczba graczy niż w "+
+                    tysiac.getName());
+        }else{
+            System.out.println("Zarówno w " + warcaby.getName() + " jak i w " + tysiac.getName() +
+                    " gra ta sama ilość graczy");
         }
 
 
