@@ -22,5 +22,6 @@ public class Pracownik {
          //Utworzenie obiektu anoniomowego. Jednorazowa instancja pracownika z określonymi danymi.
         //Obiekt anonimowy nie ma przypisanej nazwy. Nie ma deklaracji zmiennej.
         new Pracownik("Józef", "Cieśla", "Administrator Oracle").dispInfo();
+
     }
 }
