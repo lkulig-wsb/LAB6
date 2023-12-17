@@ -31,31 +31,43 @@ class Ksiazka implements Comparable<Ksiazka>{
     public String getGatunek() {
         return gatunek;
     }
+    //Przesłonięcie metody toString(). Klasa toString() pochodzi z klasy Object.
+    // Wszystkie klasy dziedziczą z klasy Object. Jeśli nie przesłonimy metody toSring(),
+    //to odziedziczymy domyślną implementację z klasy Object, czyli ciąg znaków z nazwą klasy objektu
+    //oraz jesgo adres w pamięci. Poniżej dostarczamy implementację dla klasy Ksiazka.
+
     @Override
     public String toString(){
         return "Książka: " + tytul + ", Autor: " + autor + ", Rok Wydania:"
                 + rokWydania + ", Gatunek: " + gatunek;
     }
+    //Przesłonięcie metody compareTo(), która porównuje objekty na podstawie roku wydania.
+    //Metoda pochodzi z interfejsu Comparable. Metoda porównuje bieżący objekt z objektem przekazanym jako argument.
+    //Metoda zwraca liczbę całkowitą, która określa czy objekt jest mniejszy, większy lub równy objektowi przekazanemu.
     @Override
     public int compareTo(Ksiazka other){
         return Integer.compare(this.rokWydania, other.rokWydania);
     }
     //Utworzenie metody equals() do porównywania zawartości objektów.
+    //Przesłonięcie metody gdyż pochodzi z klasy Object. Domyślna implementacja porównuje referencję objektów.
+    //Przesłonięcie umożliwia porównanie zawartości objektów, a dokładnie pól rokWydania, tytul, autor i gatunek.
     @Override
     public boolean equals(Object obj){
-        if(this ==obj){
-            return true;
+        if(this == obj){ //porównanie referencji objektów (bieżący do przekazanego)
+            return true;//jeżeli objekty są równe dalsze porównania są niekonieczne (optymalizacja)
         }
-        if(obj==null||getClass() != obj.getClass()){
+        if(obj==null||getClass() != obj.getClass()){ //czy objekt przekazany niej jest nullem/instancją tej samej klasy
             return false;
         }
-        Ksiazka other = (Ksiazka) obj;
+        Ksiazka other = (Ksiazka) obj; // Przekształcenie przek. obj. na objekt klasy Ksiazka.
+        //Porównanie pól objektu bieżącego (this) z polami objektu przekazanego jako argument.
         return rokWydania == other.rokWydania &&
                 Objects.equals(tytul,other.tytul)&&
                 Objects.equals(autor,other.autor)&&
                 Objects.equals(gatunek,other.gatunek);
     }
 
+    //Implementacja interfejsu Comparator do porównania objektów na podstawie rokuWydania, gatunku i autora:
     class ComparatorRokWydania implements Comparator<Ksiazka>{
         @Override
         public int compare(Ksiazka k1, Ksiazka k2){
@@ -155,9 +167,5 @@ class Ksiazka implements Comparable<Ksiazka>{
         for(Ksiazka ksiazka : ksiazki){
             System.out.println(ksiazka);
         }
-
-
-
     }
-
 }
