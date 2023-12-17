@@ -104,8 +104,6 @@ class Ksiazka implements Comparable<Ksiazka>{
         System.out.println(k2);
         System.out.println(k3);
         System.out.println(k4);
-
-
         //Porównanie referencj:
         //Za pomocą operatora "==" porównamy referencje (czy wskazują na to samo miejsce w pamięci) obiektów klasy.
         System.out.println();
