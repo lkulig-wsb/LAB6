@@ -24,7 +24,6 @@ class Kuchenka extends Maszyna{
         System.out.println("Kuchenka piecze.");
     }
 }
-
 public class PrzesloniecieMaszyna {
     public static void main(String[] args){
         Blender b = new Blender();

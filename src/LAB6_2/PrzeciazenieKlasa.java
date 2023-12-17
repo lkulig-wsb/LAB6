@@ -1,7 +1,4 @@
 package LAB6_2;
-
-import javax.sound.midi.Soundbank;
-
 class Pracownik {
     //Dane składowe klasy bazowej Pracownik.
     private String imie;
@@ -43,7 +40,8 @@ class PracownikIT extends Pracownik{
 
     //Przeciążenie metody wyplata() z klasy bazowej.
     public void wyplata(double kwota, double bonus){
-        System.out.println("Wypłata dla pracownika IT: " + super.getInfo() + ": " + kwota + " PLN podstawy + " + bonus + " PLN bonusu." );
+        System.out.println("Wypłata dla pracownika IT: " + super.getInfo() + ": " + kwota + " PLN podstawy + "
+                + bonus + " PLN bonusu." );
     }
 }
 //Klasa PracownikB2B dziedziczy po klasie Pracownik.
@@ -58,7 +56,6 @@ class PracownikB2B extends Pracownik{
         super(imie, nazwisko);
         this.godziny = godziny;
         this.stafka = stafka;
-
     }
     //Przeciążenie metody getInfo() z klasy bazowej.
     @Override
