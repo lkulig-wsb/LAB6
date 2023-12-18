@@ -11,11 +11,13 @@ class ZamowienieInternetowe implements Zamowienie{
     public ZamowienieInternetowe(String status){
         this.status=status;
     }
+    //Przesłonięcie metody (utworzZamowienie()) z interfejsu Zamowienie.
     @Override
     public void utworzZamowienie(){
         System.out.println("Zamówienie Internetowe zostało utworzone.");
     }
 
+    //Przesłonięcie metody (anulujZamowienie()) z interfejsu Zamowienie.
     @Override
     public void anulujZamowienie(){
         System.out.println("Zamowienie internetowe zostało anulowane.");
@@ -24,7 +26,6 @@ class ZamowienieInternetowe implements Zamowienie{
     public void wyswietlStatus(){
         System.out.println("Status zamówienia internetowego to: " + status);
     }
-
 }
 
 public class RzutowanieKlasyNaInterface {
@@ -47,9 +48,5 @@ public class RzutowanieKlasyNaInterface {
         //Rzutowanie z powrotem na klasę pozwoli na uzyskanie dostępu do metod specyficznych dla klasy.
         ZamowienieInternetowe zi2 = (ZamowienieInternetowe) zamowienie2;
         zi2.wyswietlStatus();
-
-
-
-
     }
 }

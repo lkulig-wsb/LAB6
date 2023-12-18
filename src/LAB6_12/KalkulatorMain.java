@@ -1,7 +1,6 @@
 package LAB6_12;
 
 import java.util.Objects;
-
 class Kalkulator{
 
     //Dodawanie int.

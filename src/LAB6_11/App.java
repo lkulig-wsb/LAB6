@@ -34,7 +34,6 @@ class Student extends Osoba{
                 "----------\n" +
                 super.toString() + ", Rok studiów: " + rokStudiow;
     }
-
 }
 public class App {
     public static void main(String[] args){
