@@ -1,24 +1,31 @@
 package LAB6_7;
 
+import java.io.*;
+import java.io.Serializable;
+
 //Przykład wykorzystania interfejsu Cloneable w klasie.
 //Dołożenie interfaceu Comparable.
- class Game implements Cloneable, Comparable<Game>{
+//Dołożenie implementacji interfejsu Serializable.
+ class Game implements Cloneable, Comparable<Game>, Serializable {
     //Dane składowe klasy Game.
+    // Numer wersji objektu, potrzebny do kontrolowania deserializacji (porównanie wersji objektu i klasy,
+    // jeżeli są zgodne, to deserializacja przebiega pomyślnie)
+    private static final String serialVersionUID = "VER_1";
     private String name;
-    private String ganre;
+    private String genre;
     private int numOfPlayers;
     //Utworzenie konstruktora klasy Game.
-    public Game(String name, String ganre, int numOfPlayers){
+    public Game(String name, String genre, int numOfPlayers){
         this.name = name;
-        this.ganre = ganre;
+        this.genre = genre;
         this.numOfPlayers = numOfPlayers;
     }
     //Utworzenie Getterów klasy Game.
     public String getName(){
         return name;
     }
-    public String getGanre() {
-        return ganre;
+    public String getGenre() {
+        return genre;
     }
 
     public int getNumOfPlayers() {
@@ -29,8 +36,8 @@ package LAB6_7;
         this.name = name;
     }
 
-    public void setGanre(String ganre) {
-        this.ganre = ganre;
+    public void setGenre(String genre) {
+        this.genre = genre;
     }
     public void setNumOfPlayers(int numOfPlayers) {
         this.numOfPlayers = numOfPlayers;
@@ -47,9 +54,11 @@ package LAB6_7;
         return super.clone(); //wywołanie metody clone() z klasy nadrzędnej Object
     }
 
+    //Utworzenie implementacji metody compareTo() z interface'u Comparable.
+    //Będzie ona służyła do porównania dwóch objektów na podstawie ich liczby graczy.
     @Override
     public int compareTo(Game otherGame){
-        //Porównanie dwóch gier na podstawie ilości graczy.
+
         return Integer.compare(this.numOfPlayers, otherGame.numOfPlayers);
     }
 }
@@ -65,30 +74,30 @@ public class MainGame {
             Game cloneGame = (Game) ogGame.clone();
 
             //Wypisanie dane oryginalengo obiektu i jego klonu.
-            System.out.println("Original Game: " + ogGame.getName() + ", Ganre: " + ogGame.getGanre() +
+            System.out.println("Original Game: " + ogGame.getName() + ", Ganre: " + ogGame.getGenre() +
                     ", Number of Players: " + ogGame.getNumOfPlayers());
 
-            System.out.println("Clone Game: " + cloneGame.getName() + ", Ganre: " + cloneGame.getGanre() +
+            System.out.println("Clone Game: " + cloneGame.getName() + ", Ganre: " + cloneGame.getGenre() +
                     ", Number of Players: " + cloneGame.getNumOfPlayers());
 
             //Zmiana danych w grze oryginalnej.
             ogGame.setName("Forza Hoorizon 5");
 
             //Wypisanie dane oryginalengo obiektu i jego klonu po zmianie nazwy w oryginale.
-            System.out.println("Original Game: " + ogGame.getName() + ", Ganre: " + ogGame.getGanre() +
+            System.out.println("Original Game: " + ogGame.getName() + ", Ganre: " + ogGame.getGenre() +
                     ", Number of Players: " + ogGame.getNumOfPlayers());
 
-            System.out.println("Clone Game: " + cloneGame.getName() + ", Ganre: " + cloneGame.getGanre() +
+            System.out.println("Clone Game: " + cloneGame.getName() + ", Ganre: " + cloneGame.getGenre() +
                     ", Number of Players: " + cloneGame.getNumOfPlayers());
 
             //Sklonowanie oryginalengo objektu ogGame do nowego objektu po zmianie nazwy.
             Game otherCloneGame = (Game) ogGame.clone();
 
             //Wypisanie danych obu objektów, ogGame po zmianie nazwy i otherCloneGame.
-            System.out.println("Original Game: " + ogGame.getName() + ", Ganre: " + ogGame.getGanre() +
+            System.out.println("Original Game: " + ogGame.getName() + ", Ganre: " + ogGame.getGenre() +
                     ", Number of Players: " + ogGame.getNumOfPlayers());
 
-            System.out.println("Clone Game: " + otherCloneGame.getName() + ", Ganre: " + otherCloneGame.getGanre() +
+            System.out.println("Clone Game: " + otherCloneGame.getName() + ", Ganre: " + otherCloneGame.getGenre() +
                     ", Number of Players: " + otherCloneGame.getNumOfPlayers());
 
         }catch (CloneNotSupportedException e){
@@ -114,6 +123,25 @@ public class MainGame {
         }
 
 
+        Game poker = new Game("Poker","Gra Karciana",4);
 
+        //Serializacja służy do przekształcania objektów na strumień bajtów celem zapisu lub przesłania siecią.
+        //Sarializacja objektu.
+        try(ObjectOutputStream outputStream = new ObjectOutputStream(new FileOutputStream("game.ser"))){
+            outputStream.writeObject(poker);
+        }catch(FileNotFoundException e){
+            e.printStackTrace();
+        }catch(IOException e){
+            e.printStackTrace();
+        }
+        //Deserializacja objektu.
+        try(ObjectInputStream inputStream = new ObjectInputStream(new FileInputStream("game.ser"))){
+            Game deserializedGame = (Game) inputStream.readObject();
+            System.out.println("Deserialized game: " + deserializedGame);
+        } catch(FileNotFoundException e){
+            e.printStackTrace();
+        }catch(IOException | ClassNotFoundException e){
+            e.printStackTrace();
+        }
     }
 }
