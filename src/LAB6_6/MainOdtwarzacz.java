@@ -1,7 +1,4 @@
 package LAB6_6;
-
-import java.sql.SQLOutput;
-
 //Utworzenie interfejsu mp3Player.
 //Interfejs zawiera kilka metod dotyczących operacji na odtwarzaczu mp3.
 interface mp3Player{
@@ -11,12 +8,9 @@ interface mp3Player{
     void playnext();
     void playprevious();
 }
-
 //Utworznie klasy MainOdtwarzacz która zawiera metodę "main".
-
 public class MainOdtwarzacz {
     public static void main(String[] args){
-
         //Klasa anonimowa interface'u mp3Player.
 
         //Utworzenie objektu klasy anonimowej. Klasa implementuje interfejs mp3Player.
@@ -33,31 +27,24 @@ public class MainOdtwarzacz {
                 System.out.println("< Playing: " + " Song - " + currentTrack
                         + ", Artist - " + artist + " >");
             }
-
             @Override
             public void pause() {
                 System.out.println("Player paused.");
             }
-
             @Override
             public void stop() {
                 System.out.println("Player stopped!");
             }
-
             @Override
             public void playnext() {
                 System.out.println("Switching to next track!");
             }
-
             @Override
             public void playprevious() {
                 System.out.println("Switching to previous track!");
             }
-
-
         };
-
-//Wywołanie metod z klasy anonimowej
+        //Wywołanie metod z klasy anonimowej
 
         anonymousPlayer.play();
         anonymousPlayer.pause();
